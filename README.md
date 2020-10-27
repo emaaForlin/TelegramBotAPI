@@ -7,6 +7,8 @@ The actions you can run, are based on [Telegram bot API Docs](https://core.teleg
 After read all the README.md, if you want to contribute, you can start adding more functions based on the [API methods](https://core.telegram.org/bots/api#available-methods). Or create your custom function. 
 __I will be grateful to everyone who wants to contribute.__
 
+
+
 ## Prerequisites
 
 ### Instalation
