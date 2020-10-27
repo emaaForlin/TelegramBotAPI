@@ -29,7 +29,7 @@ If we put this in the browser that returns a `json`, we need to find the `id` fi
 Now we have to test if everything is ok.
 
 Save this script as `test.py` and run it.
-```
+```python
 from telegramapi import TelegramAPI 
 
 tb = TelegramAPI('YOUR_BOT_TOKEN')
@@ -41,4 +41,38 @@ If don't return any error you're ready for use it.
 
 
 ## Methods
+```python
+Update()
+```
+Returns a __dict__ with data of the chat.
+
+```python
+readLastMessage()
+```
+Return a __dict__ with `message`, `fromName` and `fromLastName` of the last message .
+
+```python
+getMe()
+```
+Simple method for test your token. Return info of that.
+
+```python
+sendMessage(chat_id, message)
+```
+Make `sendMessage` request.
+
+```python
+getCommands()
+```
+Return a __list__ with your bot's commands.
+
+```python
+sendDice(chat_id)
+```
+Just send a dice to your chat.
+
+
+
+
+
 
