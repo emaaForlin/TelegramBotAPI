@@ -2,7 +2,10 @@
 
 This module make requests to the Telegram API to run actions.
 The actions you can run, are based on [Telegram bot API Docs](https://core.telegram.org/bots/api).
-You can add more actions because aren't all in the module.
+
+## IMPORTANT: If you want to contribute
+After read all the README.md, if you want to contribute, you can start adding more functions based on the [API methods](https://core.telegram.org/bots/api#available-methods). Or create your custom function. 
+__I will be grateful to everyone who wants to contribute.__
 
 ## Prerequisites
 
@@ -46,25 +49,30 @@ Update()
 ```
 Returns a __dict__ with data of the chat.
 
+
 ```python
 readLastMessage()
 ```
 Return a __dict__ with `message`, `fromName` and `fromLastName` of the last message .
+
 
 ```python
 getMe()
 ```
 Simple method for test your token. Return info of that.
 
+
 ```python
 sendMessage(chat_id, message)
 ```
 Make `sendMessage` request.
 
+
 ```python
 getCommands()
 ```
 Return a __list__ with your bot's commands.
+
 
 ```python
 sendDice(chat_id)
@@ -72,7 +80,4 @@ sendDice(chat_id)
 Just send a dice to your chat.
 
 
-
-
-
-
+#### You can read the [available methods](https://core.telegram.org/bots/api#available-methods) of this API and add it to the module.
