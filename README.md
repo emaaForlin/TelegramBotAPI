@@ -12,9 +12,7 @@ __I will be grateful to everyone who wants to contribute.__
 ## Prerequisites
 
 ### Instalation
-First you need clone the repo with `git clone https://github.com/emaaForlin/TelegramBotAPI.git` or download the `.zip` file.
-The module must be in your project directory.
-
+First you need clone the repo with `pip install TelegramBotInterface`
 ### Getting the tokens
 For use it, you need a __bot_token__ like `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11` and your __chat_id__ that looks like `1003456789`.
 
@@ -34,49 +32,49 @@ If we put this in the browser that returns a `json`, we need to find the `id` fi
 Now we have to test if everything is ok.
 
 Save this script as `test.py` and run it.
-```python
-from telegramapi import TelegramAPI 
+
+```from telegramapi import TelegramAPI 
 
 tb = TelegramAPI('YOUR_BOT_TOKEN')
-tb.sendMessage('YOUR_CHAT_ID', 'Hello world!')
-```
+tb.sendMessage('YOUR_CHAT_ID', 'Hello world!')```
+
 If don't return any error you're ready for use it.
 
 [Here is my bot example](https://github.com/emaaForlin/TelegramBot) 
 
 
 ## Methods
-```python
+```
 Update()
 ```
 Returns a __dict__ with data of the chat.
 
 
-```python
+```
 readLastMessage()
 ```
 Return a __dict__ with `message`, `fromName` and `fromLastName` of the last message .
 
 
-```python
+```
 getMe()
 ```
 Simple method for test your token. Return info of that.
 
 
-```python
+```
 sendMessage(chat_id, message)
 ```
 Make `sendMessage` request.
 
 
-```python
+```
 getCommands()
 ```
 Return a __list__ with your bot's commands.
 
 
-```python
+```
 sendDice(chat_id)
 ```
 Just send a dice to your chat.
