@@ -33,15 +33,16 @@ Now we have to test if everything is ok.
 
 Save this script as `test.py` and run it.
 
-```from telegramapi import TelegramAPI 
+```
+from telegramapi import TelegramAPI 
 
 tb = TelegramAPI('YOUR_BOT_TOKEN')
-tb.sendMessage('YOUR_CHAT_ID', 'Hello world!')```
+tb.sendMessage('YOUR_CHAT_ID', 'Hello world!')
 
 If don't return any error you're ready for use it.
 
 [Here is my bot example](https://github.com/emaaForlin/TelegramBot) 
-
+```
 
 ## Methods
 ```

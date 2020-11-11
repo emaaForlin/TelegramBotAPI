@@ -1,5 +1,6 @@
 /__pycache__
 MANIFEST
-/dist
+/dist/
+/TelegramBotInterface/__pycache__
 README
-
+setup.cfg
