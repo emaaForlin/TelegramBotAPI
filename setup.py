@@ -5,15 +5,15 @@ from os import path
 setup(
   name = 'TelegramBotInterface',         # How you named your package folder (MyLib)
   packages = ['TelegramBotInterface'],   # Chose the same as "name"
-  version = '3.0',                # Start with a small number and increase it with every change you make
-  license='GPL-3.0-only',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
+  version = '4.0',                # Start with a small number and increase it with every change you make
+  license='mit',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'This a module who is work like an interface to telegram bot API',   # Give a short description about your library
   long_description = 'All Docs on https://github.com/emaaForlin/TelegramBotInterface',
   long_description_content_type = 'text/markdown',
   author = 'Emanuel Forlin',                   # Type in your name
   author_email = 'emaforlin@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/emaaForlin/TelegramBotInterface',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/emaaForlin/TelegramBotInterface/archive/v0.3.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/emaaForlin/TelegramBotInterface/archive/v0.4.tar.gz',    # I explain this later on
   keywords = ['API', 'BOT', 'TELEGRAM', 'INTERFACE'],   # Keywords that define your package best
   install_requires=['requests'],            # I get to this in a second
   classifiers=[
