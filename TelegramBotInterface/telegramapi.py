@@ -1,7 +1,3 @@
-################
-# GPL-3.0-only #
-################
-
 import json
 import requests
 
@@ -18,14 +14,15 @@ class TelegramAPI:
 
 	def readLastMessage(self):
 		msg = self.Update()
-		i = len(msg['result']) - 1
-		#print(msg.keys())
-		m_text = msg['result'][i]['message']['text']
-		m_fname = msg['result'][i]['message']['from']['first_name']
-		m_lname = msg['result'][i]['message']['from']['last_name']
-	
-		data = {'message': m_text, 'fromName': m_fname, 'fromLastName': m_lname}
-		return data
+		try:
+			i = len(msg['result']) - 1
+			m_text = msg['result'][i]['message']['text']
+			m_fname = msg['result'][i]['message']['from']['first_name']
+			m_lname = msg['result'][i]['message']['from']['last_name']
+			data = {'message': m_text, 'fromName': m_fname, 'fromLastName': m_lname}
+			return data
+		except:
+			print('Not found messages')
 
 	def getMe(self):
 		r = requests.get(self.URL+'getMe')
