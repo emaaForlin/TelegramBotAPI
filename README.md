@@ -26,7 +26,7 @@ After this we need manually make a request to find the __chat_id__. The docs of 
 Replace `<token>` with your __bot_token__ and in `METHOD_NAME` we use `getUpdates`.
 For example `https://api.telegram.org/bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11/getUpdates`
 
-If we put this in the browser that returns a `json`, we need to find the `id` field. That contents we __chat_id__
+If we put this in the browser that returns a `json`, we need to find the `id` field. That contents our __chat_id__
 
 ### First run
 Now we have to test if everything is ok.
